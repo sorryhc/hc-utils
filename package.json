@@ -6,8 +6,8 @@
     "examples"
   ],
   "scripts": {
-    "build": "npm run-script build --workspace js-utils",
-    "watch": "npm run-script watch --workspace js-utils",
+    "build": "npm run-script build --workspace hc-utils",
+    "watch": "npm run-script watch --workspace hc-utils",
     "website": "npm run-script build --workspace examples",
     "start": "npm run-script start --workspace examples",
     "version": "lerna version --exact --force-publish --no-push --no-git-tag-version"

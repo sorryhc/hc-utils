@@ -1,4 +1,4 @@
-import { ceshi } from "js-utils";
+import { ceshi } from "hc-utils";
 
 const App = () => {
   console.log(466, ceshi())
