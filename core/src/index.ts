@@ -1,3 +1,1 @@
-export const ceshi = () => {
-  return '4444'
-}
+export * from './uri';
