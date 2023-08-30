@@ -3,6 +3,7 @@
  * @name url key
 */
 export const getUrlParam = (key: string): string | null => {
+  console.log(46, key)
   const reg = new RegExp(`(^|&)${key}=([^&]*)(&|$)`);
   const r = window.location.search.substr(1).match(reg);
   if (r != null) return r[2]; return null;

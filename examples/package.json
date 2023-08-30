@@ -1,16 +1,22 @@
 {
   "name": "examples",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "hc-utils": "0.0.1",
     "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "react-dom": "~18.2.0",
+    "react-router": "6.10.0",
+    "react-router-dom": "6.10.0"
   },
   "devDependencies": {
     "@types/react": "~18.2.15",
     "@types/react-dom": "~18.2.7",
-    "saqu": "^0.1.29"
+    "saqu": "^0.1.31",
+    "@saqu/loader-md-react-preview": "^0.1.31",
+    "simple-markdown-preview": "^0.0.9",
+    "@saqu/auto-create-enter": "^0.1.31",
+    "@saqu/auto-create-routes": "^0.1.31"
   },
   "scripts": {
     "start": "saqu start",
