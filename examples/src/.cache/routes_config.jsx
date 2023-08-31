@@ -1,11 +1,26 @@
-import * as Pages1 from "@/pages";
-import * as PagesUri2 from "@/pages/uri";
-import * as PagesValidate3 from "@/pages/validate";
-const { default:Pages1Default,...Pages1Other  } = Pages1;
-const { default:PagesUri2Default,...PagesUri2Other  } = PagesUri2;
-const { default:PagesValidate3Default,...PagesValidate3Other  } = PagesValidate3;
-
-export default  [
-{ path:"/",...Pages1Other },
-	{ path:"/uri",...PagesUri2Other },
-	{ path:"/validate",...PagesValidate3Other },];
+import React from "react";import * as LayoutAll from "@/layout";const { default: LayoutDefault,...LayoutOther } = LayoutAll;const router = [
+    {
+        "path": "/",
+        "children": [
+            {
+                "index": true,
+                "element": "@/pages/index"
+            },
+            {
+                "path": "/home",
+                "index": true,
+                "element": "@/pages/index"
+            },
+            {
+                "path": "uri",
+                "element": "@/pages/uri"
+            },
+            {
+                "path": "validate",
+                "element": "@/pages/validate"
+            }
+        ],
+        ...LayoutOther
+    }
+];
+export default router;

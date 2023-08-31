@@ -1,6 +1,7 @@
 
 import { defineConfig } from 'saqu';
-import autoCreateRoutes from '@saqu/auto-create-routes';
+// import autoCreateRoutes from '@saqu/auto-create-routes';
+import autoConfigRoutes from '@saqu/auto-config-to-routes';
 import autoCreateEnter from "@saqu/auto-create-enter"
 
 export default defineConfig({
@@ -9,7 +10,8 @@ export default defineConfig({
     publicPath: "./"
   },
   plugins: [
-    new autoCreateRoutes(),
+    // new autoCreateRoutes(),
+    new autoConfigRoutes(),
     new autoCreateEnter({
       rootRoutes: "@/layout"
     })

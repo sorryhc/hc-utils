@@ -6,7 +6,7 @@ const App = () => {
   console.log(466, token);
   return (
     <div>
-      home
+      home page
     </div>
   )
 }
